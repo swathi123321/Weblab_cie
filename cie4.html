@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Educational Details Form</title>
+  <style>
+    /* Basic styling */
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: Arial, sans-serif;
+      background: linear-gradient(to right, #a8edea, #fed6e3);
+    }
+
+    .form-box {
+      background-color: #fff;
+      max-width: 700px;
+      margin: 40px auto;
+      padding: 30px;
+      border-radius: 10px;
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+    }
+
+    h2 {
+      text-align: center;
+      color: #00796b;
+      margin-bottom: 25px;
+    }
+
+    h3 {
+      color: #333;
+      border-bottom: 2px solid #00796b;
+      padding-bottom: 5px;
+      margin-top: 25px;
+    }
+
+    label {
+      display: block;
+      margin-bottom: 5px;
+      font-weight: bold;
+      color: #333;
+    }
+
+    input[type="text"],
+    input[type="number"],
+    input[type="email"],
+    select,
+    input[type="file"] {
+      width: 100%;
+      padding: 10px;
+      margin-bottom: 20px;
+      border: 1px solid #ccc;
+      border-radius: 6px;
+      font-size: 16px;
+    }
+
+    .buttons {
+      text-align: center;
+      margin-top: 20px;
+    }
+
+    input[type="submit"],
+    input[type="reset"] {
+      background-color: #00796b;
+      color: white;
+      border: none;
+      padding: 10px 20px;
+      margin: 5px;
+      font-size: 16px;
+      border-radius: 5px;
+      cursor: pointer;
+      transition: background 0.3s;
+    }
+
+    input[type="submit"]:hover,
+    input[type="reset"]:hover {
+      background-color: #004d40;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="form-box">
+    <h2>Educational Details Form</h2>
+
+    <form action="#" method="post" enctype="multipart/form-data">
+
+      <!-- Personal Info -->
+      <h3>Personal Information</h3>
+      <label for="name">Full Name:</label>
+      <input type="text" id="name" name="fullname" placeholder="Enter your full name" required>
+
+      <label for="email">Email Address:</label>
+      <input type="email" id="email" name="email" placeholder="you@example.com" required>
+
+      <label for="contact">Contact Number:</label>
+      <input type="text" id="contact" name="contact" placeholder="e.g. 9876543210" required>
+
+      <!-- Primary School -->
+      <h3>Primary Education</h3>
+      <label for="p_school">School Name:</label>
+      <input type="text" id="p_school" name="primary_school" placeholder="Enter primary school name" required>
+
+      <label for="p_year">Year of Passing:</label>
+      <input type="number" id="p_year" name="primary_year" placeholder="e.g. 2012" required>
+
+      <label for="p_percent">Percentage/Grade:</label>
+      <input type="text" id="p_percent" name="primary_percent" placeholder="e.g. 85% or A grade">
+
+      <label for="p_doc">Upload Marksheet:</label>
+      <input type="file" id="p_doc" name="primary_document" accept=".pdf,.jpg,.png">
+
+      <!-- Secondary School -->
+      <h3>Secondary Education</h3>
+      <label for="s_school">School Name:</label>
+      <input type="text" id="s_school" name="secondary_school" placeholder="Enter secondary school name" required>
+
+      <label for="s_year">Year of Passing:</label>
+      <input type="number" id="s_year" name="secondary_year" placeholder="e.g. 2016" required>
+
+      <label for="s_percent">Percentage/Grade:</label>
+      <input type="text" id="s_percent" name="secondary_percent" placeholder="e.g. 90% or A+ grade">
+
+      <label for="s_doc">Upload Marksheet:</label>
+      <input type="file" id="s_doc" name="secondary_document" accept=".pdf,.jpg,.png">
+
+      <!-- Higher Secondary -->
+      <h3>Higher Secondary / PUC</h3>
+      <label for="h_school">College Name:</label>
+      <input type="text" id="h_school" name="higher_school" placeholder="Enter PUC/12th college name" required>
+
+      <label for="h_year">Year of Passing:</label>
+      <input type="number" id="h_year" name="higher_year" placeholder="e.g. 2018" required>
+
+      <label for="h_percent">Percentage/Grade:</label>
+      <input type="text" id="h_percent" name="higher_percent" placeholder="e.g. 88% or A grade">
+
+      <label for="h_doc">Upload Marksheet:</label>
+      <input type="file" id="h_doc" name="higher_document" accept=".pdf,.jpg,.png">
+
+      <!-- Graduation -->
+      <h3>Graduation</h3>
+      <label for="g_college">College Name:</label>
+      <input type="text" id="g_college" name="grad_college" placeholder="Enter graduation college name" required>
+
+      <label for="g_course">Course Name:</label>
+      <input type="text" id="g_course" name="grad_course" placeholder="e.g. B.Sc, B.Com, B.E, BCA">
+
+      <label for="g_year">Year of Passing:</label>
+      <input type="number" id="g_year" name="grad_year" placeholder="e.g. 2022">
+
+      <label for="g_percent">Percentage/CGPA:</label>
+      <input type="text" id="g_percent" name="grad_percent" placeholder="e.g. 8.2 CGPA or 82%">
+
+      <label for="g_doc">Upload Marksheet/Degree:</label>
+      <input type="file" id="g_doc" name="grad_document" accept=".pdf,.jpg,.png">
+
+      <!-- Buttons -->
+      <div class="buttons">
+        <input type="submit" value="Submit Details">
+        <input type="reset" value="Reset Form">
+      </div>
+    </form>
+  </div>
+
+</body>
+</html>
